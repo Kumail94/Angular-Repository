@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11">
+        <div style="cursor: pointer;" class="list-group-item clearfix"
+        [routerLink] = "[index]"
+        routerLinkActive = "active" >
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{reciepe.name}}</h4>
+                <p class="list-group-item-text">{{reciepe.description}}</p>
+            </div>
+            <span class="pull-right">
+                <img [src]="reciepe.imagePath" [alt]="reciepe.name" class="img-responsive" style="max-height: 80px;">
+            </span>
+        </div><br>
+    </div>
+</div>
